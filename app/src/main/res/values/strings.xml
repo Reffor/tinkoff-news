@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">TinNew</string>
+    <string name="no_title">Untitled</string>
+    <string name="no_content">No content</string>
+    <string name="news_title">News</string>
+    <string name="menu_action_refresh">Refresh</string>
 </resources>
