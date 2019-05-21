@@ -80,11 +80,11 @@ public class MainActivity extends AppCompatActivity implements TitleInterface {
                             o2.getMilliseconds(),
                             o1.getMilliseconds()
                     )));
-            adapter = new Adapter(this, payload.getPayload(), title -> {
-                            Intent intent = new Intent(this, ContentActivity.class);
-                            intent.putExtra("id", title.getId());
-                            startActivity(intent);
-                        });
+            adapter = new Adapter(payload.getPayload(), this, newsTitle -> {
+                Intent intent = new Intent(this, ContentActivity.class);
+                intent.putExtra("id", newsTitle.getId());
+                startActivity(intent);
+            });
 
             recyclerView.setAdapter(adapter);
         }

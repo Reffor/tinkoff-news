@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.hfad.alier.tinnew.R;
+import com.hfad.alier.tinnew.service.Main.MainActivity;
 import com.hfad.alier.tinnew.service.models.Title;
 
 import java.text.SimpleDateFormat;
@@ -23,7 +24,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.NewsHolder>{
     private final SelectedListener selectedListener;
     SimpleDateFormat dateFormat;
 
-    public Adapter(Context context, List<Title> titles, SelectedListener selectedListener){
+    public Adapter(List<Title> newsTitleList, Context context, SelectedListener selectedListener){
         this.titles = titles;
         this.context = context;
         this.dateFormat = new SimpleDateFormat("HH:mm, dd MMM yyyy", Locale.ENGLISH);
