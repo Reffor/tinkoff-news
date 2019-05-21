@@ -75,9 +75,6 @@ public class ContentActivity extends AppCompatActivity implements ViewPresenter{
                 dateView.setText(simpleDateFormat.format(new Date(payload.getTitle().getMilliseconds())));
             }
         }
-        else {
-            Toast.makeText(this, "Не подходящая версия", Toast.LENGTH_LONG).show();
-        }
     }
 
 

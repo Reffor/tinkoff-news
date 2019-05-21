@@ -22,7 +22,7 @@ public class ContentPresernt implements ViewInterface{
     @Override
     public void getNews(String id){
         newId = id;
-
+        getObservable().subscribeWith(getObserver());
     }
 
     public Observable<ContentPayload> getObservable(){
